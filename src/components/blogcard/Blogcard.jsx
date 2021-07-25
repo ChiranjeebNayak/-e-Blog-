@@ -17,9 +17,8 @@ function Blogcard(props) {
                 </p>
                 <Link  className="btn btn-primary" 
                 to={{
-                  pathname: `/Viewpost/${props.postid}`,state: { id: 7, color: 'green' }
+                  pathname: `/Viewpost/${props.postid}`
                 }}
-                
                 >
                   View Post
                 </Link>

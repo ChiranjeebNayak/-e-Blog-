@@ -1,4 +1,5 @@
 .title label{
+    
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
 }
@@ -31,4 +32,18 @@
 .commenttext{
     margin-top: 5px;
     font-size: 0.9rem;
+}
+.right{
+    text-align: right;
+}
+.edit{
+    width: 7vw;
+    margin: 1rem;
+}
+.delete{
+    width: 7vw;
+    margin: 1rem;
+}
+.opration {
+    text-align: right;
 }

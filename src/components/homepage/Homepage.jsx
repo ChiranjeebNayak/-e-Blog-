@@ -24,15 +24,11 @@ function Homepage() {
     },
   ]
  
-// let data = localStorage.getItem('posts');
-// console.log("localstorage");
-// console.log(data);
+
 const [posts,setPosts] = useState([]);
 useEffect(()=>{
   fetch("http://localhost:8081/post/all").then((result) => {
   result.json().then((resp) => {
-    // console.log("result = ",resp.data);
-    // posts=resp.data;
     setPosts(resp.data);
   })
 })

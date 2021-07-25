@@ -21,9 +21,9 @@ console.log(posts);
     <div>
       <Navbar></Navbar>
       <div className="row">
-        {posts.map((item) => 
+        {posts.map((item,i) => 
           item.user_id===userId ?
-          <Blogcard title={item.title} contect={item.content} key={item.id} />:null
+          <Blogcard title={item.title} contect={item.content} postid={item.id} key={i} />:null
         )}
       </div>
     </div>

@@ -324,31 +324,6 @@ app.put("/post/edit", (req, res) => {
 
 
 
-//**********************************delete post************************/
-
-app.delete("/post/delete", (req, res) => {
-
-    console.log(req.body);
-    var postId = req.body.post_id;
-
-    var sqlQuery = "delete from posts where id=?";
-    mysqlConnection.query(sqlQuery, [postId], (err, result) => {
-        if (err) {
-            // throw err;
-            res.send("sql error");
-        } else {
-
-            res.json({
-                "status": 200,
-                "data": "post deleted"
-            });
-            res.end();
-        }
-    });
-
-});
-
-//**********************************delete post************************/
 
 
 
@@ -393,10 +368,10 @@ app.post("/comment/create", (req, res) => {
 
 //**********************************get comment of current post************************/
 
-app.get("/comment/all", (req, res) => {
+app.get("/comment/:post_id", (req, res) => {
 
-    console.log(req.body);
-    var postId = req.body.post_id;
+    console.log(req.params);
+    var postId = req.params.post_id;
 
     var sqlQuery = "select * from comment where post_id=?";
     mysqlConnection.query(sqlQuery, [postId], (err, result) => {
@@ -411,7 +386,7 @@ app.get("/comment/all", (req, res) => {
 
             res.json({
                 "status": 200,
-                "data": result
+                "comments": result
             });
             res.end();
         }
@@ -421,6 +396,38 @@ app.get("/comment/all", (req, res) => {
 
 //**********************************get comment of current post************************/
 
+
+
+
+//**********************************delete post of current post************************/
+
+app.delete("/delete/:post_id", (req, res) => {
+
+    console.log(req.params);
+    var postId = req.params.post_id;
+
+    var sqlQuery = "delete from posts where id=?";
+    mysqlConnection.query(sqlQuery, [postId], (err, result) => {
+        if (err) {
+            // throw err;
+            res.json({
+                "status": 404,
+                "data": err
+            });
+            res.end();
+        } else {
+
+            res.json({
+                "status": 200,
+                "comments": result
+            });
+            res.end();
+        }
+    });
+
+});
+
+//**********************************delete post of current post************************/
 
 app.listen("8081", () => {
     console.log("server started....");

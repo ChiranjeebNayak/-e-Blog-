@@ -13,6 +13,7 @@ import Navbar from './components/navbar/Navbar';
 import Blogs from './components/blogs/Blogs';
 import Write from './components/write/Write';
 import Viewpost from './components/viewpost/Viewpost';
+import Editpost from './components/editpost/Editpost';
 
 
 function App() {
@@ -37,7 +38,9 @@ function App() {
         <Route  path="/Viewpost/:postid">
         <Viewpost />
         </Route>
-
+        <Route  path="/Editpost/:postid">
+        <Editpost />
+        </Route>
       
     </Router>
   );
