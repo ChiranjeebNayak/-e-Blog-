@@ -1,0 +1,32 @@
+.container{
+    width: 50vw !important;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+.title{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.title span{
+    color: orange;
+}
+
+.sub-title{
+    color: rgb(140, 175, 214);
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.submit-btn{
+    text-align: center;
+}
+.old-user{
+    margin: 2vh;
+    padding: 1rem;
+    text-align: center;
+    color: royalblue;
+    cursor: pointer;
+}

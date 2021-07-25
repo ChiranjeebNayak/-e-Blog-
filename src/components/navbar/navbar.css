@@ -1,0 +1,11 @@
+
+.navbar{
+    font-family: 'Open Sans', sans-serif ;
+    position: sticky;
+    top: 0%;
+    z-index: 5;
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 400;
+}

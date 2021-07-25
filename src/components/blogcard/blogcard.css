@@ -1,0 +1,6 @@
+.card{
+    margin: 1rem;
+}
+.card:hover{
+    border: steelblue;
+}
