@@ -22,7 +22,7 @@ function Login() {
                 email : email,
                 password : password
             });
-            console.log(res.data.data);
+            
            
             if(res.data.status===200){
               localStorage.setItem('user_status',true);

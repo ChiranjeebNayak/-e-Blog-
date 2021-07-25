@@ -19,7 +19,7 @@ import Editpost from './components/editpost/Editpost';
 function App() {
   //const currentUser=localStorage.getItem('user_status');
   //console.log(currentUser);
-  let currentUser=true;
+  let currentUser=localStorage.getItem('user_status');
   return (
     <Router>
     
