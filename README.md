@@ -63,7 +63,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
  
  Comment on a Post
  
-### Backend
+## Back end
 
  MySQL database operations
  
@@ -73,7 +73,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
  
  ...
  
-### Technology stack
+## Technology Stack
 
  react
  
@@ -87,6 +87,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
  
  MySQL
  
-### TODO
+## TODO
 
 Admin Managment
