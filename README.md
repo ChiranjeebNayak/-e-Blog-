@@ -68,3 +68,34 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### Function description
+## Front end
+
+ Article list display
+ Article classification
+ Login Management
+ Article details page display
+ Create Post
+ Read Post
+ Update Post
+ Delete Post
+ Comment on a Post
+Backend
+
+ MySQL database operations
+ Route management
+ Basic CRUD(Create Read Update Delete) Operation
+ ...
+Technology stack
+ react
+ react-router
+ react-hooks
+ Nodejs
+ Expressjs
+ MySQL
+ 
+TODO
+Admin Managment
